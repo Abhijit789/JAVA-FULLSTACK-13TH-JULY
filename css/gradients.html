@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid; */
+            /* margin-top: 20px; */
+            /* margin:auto; */
+            margin-top: 20px;
+        }
+        .box:nth-child(1){
+            background-image: linear-gradient(to right,pink,blue,violet);
+
+        }
+
+        .box:nth-child(2){
+            background-image: linear-gradient(to left,pink,blue,violet);
+
+        }
+        .box:nth-child(3){
+            background-image: linear-gradient(to bottom right,pink,blue,violet);
+
+        }
+
+        .box:nth-child(4){
+            background-image: linear-gradient(to top left,pink,blue,violet);
+
+        }
+
+        .box:nth-child(5){
+            background-image: repeating-linear-gradient(to right,pink 10px,blue 30px,violet 60px);
+
+        }
+        .box:nth-child(6){
+            background-image: radial-gradient(circle,pink,blue,violet);
+
+        }
+        .box:nth-child(7){
+            background-image: radial-gradient(pink,blue,violet);
+
+        }
+        .box:nth-child(8){
+            background-image: repeating-radial-gradient(circle,yellow 10px,blue 30px, red 60px);
+
+        }
+        .box:nth-child(9){
+            background-image: repeating-conic-gradient(red 0deg,red 10deg,yellow 10deg,yellow 20deg,blue 20deg, blue 30deg);
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+    <div class="box" id="box9"></div>
+    <div class="box" id="box10"></div>
+</body>
+</html>
