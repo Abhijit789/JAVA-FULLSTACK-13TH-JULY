@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tabs{
+            height: 100px;
+            width: 50px;
+            background-color: black;
+            /* border: 1px solid; */
+            border-radius: 0px 0px 50px 50px;
+            animation: piano 2s infinite linear alternate-reverse;
+            background-image: linear-gradient(orange,white,blue,white,green);
+
+
+        }
+
+        .parent{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @keyframes piano {
+            from{
+                height: 100px;
+                transform: scale(0);
+                transform-origin: center;
+            }
+            to{
+                height: 100vh;
+                transform: scale(1);
+                
+                transform-origin: center;
+
+            }
+            
+        }
+        .tabs:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        .tabs:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .tabs:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        .tabs:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        .tabs:nth-child(5){
+            animation-delay: 0.5s;
+        }
+        .tabs:nth-child(6){
+            animation-delay: 0.6s;
+        }
+        .tabs:nth-child(7){
+            animation-delay: 0.7s;
+        }
+        .tabs:nth-child(8){
+            animation-delay: 0.8s;
+        }
+        .tabs:nth-child(9){
+            animation-delay: 0.9s;
+        }
+        .tabs:nth-child(10){
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="tab1 tabs"></div>
+    <div class="tab2 tabs"></div>
+    <div class="tab3 tabs"></div>
+    <div class="tab4 tabs"></div>
+    <div class="tab5 tabs"></div>
+    <div class="tab6 tabs"></div>
+    <div class="tab7 tabs"></div>
+    <div class="tab8 tabs"></div>
+    <div class="tab9 tabs"></div>
+    <div class="tab10 tabs"></div>
+    </div>
+</body>
+</html>

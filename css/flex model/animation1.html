@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 300px;
+            width: 300px;
+            border:none;
+            margin: auto;
+            margin-top: 150px;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid;
+            animation-name: slider;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: relative;
+            border: 5px dashed red;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            animation: rotate 2s infinite linear;
+        }
+        .child{
+            margin-left: 50px;
+        }
+
+        @keyframes rotate {
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+            
+        }
+
+        @keyframes slider {
+            0%{
+                top: 0px;
+                left: 0px;
+                /* background-image: linear-gradient(pink,blue,violet); */
+                transform: rotateZ('0deg');
+            }
+
+            25%{
+                top: 0px;
+                left: 200px;
+                
+                /* background-image: linear-gradient(pink,blue,violet,red); */
+                transform: rotateZ('360deg');
+                
+            }
+
+            50%{
+                top: 250px;
+                left: 200px;
+                
+            
+            }
+            75%{
+                top: 250px;
+                left: -50px;
+            }
+
+            100%{
+                top: 0px;
+                left: -50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child ball" id="ball"></div>
+        <div class="child box" id="box"></div>
+    </div>
+</body>
+</html>

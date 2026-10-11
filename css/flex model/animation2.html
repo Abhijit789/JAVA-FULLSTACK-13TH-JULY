@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            border-bottom: 2px solid;
+            display: flex;
+            justify-content: space-around;
+           
+            width: 600px;
+            margin: auto;
+             margin-top: 300px;
+             transform: rotateZ(45deg);
+            
+        }
+        ul li{
+            list-style: none;
+            height: 50px;
+            width: 50px;
+            border:none;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            background-image: linear-gradient(pink,blue,violet);
+            animation: bounce 0.5s infinite linear alternate-reverse;
+        }
+
+        @keyframes bounce {
+            from{
+                translate: 0px 0px;
+            }
+            to{
+                translate: 0px -150px;
+            }
+            
+        }
+        ul>.even{
+            animation-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="li odd"></li>
+        <li class="li even"></li>
+        <li class="li odd"></li>
+        <li class="li even"></li>
+    </ul>
+</body>
+</html>

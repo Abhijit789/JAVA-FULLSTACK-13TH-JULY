@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px grey;
+            display: flex;
+
+        }
+        #parent1{
+            flex-wrap: wrap;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            box-shadow: 0px 0px 8px grey;
+        }
+
+        #parent2{
+            /* flex-direction: row;
+            flex-wrap: wrap-reverse; */
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; */
+
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        #parent3{
+            /* justify-content: space-between;
+             */
+             /* justify-content: space-around; */
+             /* justify-content: space-evenly; */
+             justify-content: center;
+            flex-wrap: wrap;
+            width: 750px;
+            align-items: center;
+        }
+
+        #parent3>.child{
+            width: 60px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="parent" id="parent1">
+        <div class="child" id="child1">BOX1</div>
+        <div class="child" id="child2">BOX2</div>
+        <div class="child" id="child3">BOX3</div>
+        <div class="child" id="child4">BOX4</div>
+        <div class="child" id="child5">BOX5</div>
+        <div class="child" id="child6">BOX6</div>
+        <div class="child" id="child7">BOX7</div>
+        <div class="child" id="child8">BOX8</div>
+        <div class="child" id="child9">BOX9</div>
+        <div class="child" id="child10">BOX10</div>
+        <div class="child" id="child11">BOX11</div>
+        <div class="child" id="child12">BOX12</div>
+        <div class="child" id="child12">BOX13</div>
+        <div class="child" id="child12">BOX14</div>
+        <div class="child" id="child12">BOX15</div>
+        <div class="child" id="child12">BOX16</div>
+        <div class="child" id="child12">BOX17</div>
+        <div class="child" id="child12">BOX18</div>
+        <div class="child" id="child12">BOX19</div>
+        <div class="child" id="child12">BOX20</div>
+        <div class="child" id="child12">BOX21</div>
+        <div class="child" id="child12">BOX22</div>
+        <div class="child" id="child12">BOX23</div>
+        <div class="child" id="child12">BOX24</div>
+        <div class="child" id="child12">BOX25</div>
+        <!-- <div class="child" id="child12">BOX12</div>
+        <div class="child" id="child12">BOX12</div>
+        <div class="child" id="child12">BOX12</div> -->
+    </div>
+    <div class="parent" id="parent2">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+        <div class="child" id="child6">6</div>
+        <div class="child" id="child7">7</div>
+        <div class="child" id="child8">8</div>
+        <div class="child" id="child9">9</div>
+        <div class="child" id="child10">10</div>
+    </div>
+    <div class="parent" id="parent3">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+        <div class="child" id="child6">6</div>
+        <div class="child" id="child7">7</div>
+        <div class="child" id="child8">8</div>
+        <div class="child" id="child9">9</div>
+        <div class="child" id="child10">10</div>
+    </div>
+    <div class="parent" id="parent4">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+        <div class="child" id="child4">4</div>
+        <div class="child" id="child5">5</div>
+        <div class="child" id="child6">6</div>
+        <div class="child" id="child7">7</div>
+        <div class="child" id="child8">8</div>
+        <div class="child" id="child9">9</div>
+        <div class="child" id="child10">10</div>
+    </div>
+    <div class="parent" id="parent5">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2"></div>
+        <div class="child" id="child3"></div>
+        <div class="child" id="child4"></div>
+        <div class="child" id="child5"></div>
+        <div class="child" id="child6"></div>
+        <div class="child" id="child7"></div>
+        <div class="child" id="child8"></div>
+        <div class="child" id="child9"></div>
+        <div class="child" id="child10"></div>
+    </div>
+</body>
+</html>
